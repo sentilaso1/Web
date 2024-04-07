@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Duong">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="html5.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+                *{
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                }
+                body{
+                        min-height: 100vh;
+                        background-image: url(Hinhanh/1681277889-100361152-110180732.jpg);
+                }
+                
+                .wrapper{
+                        position: relative;
+                        max-width: 430px;
+                        width: 100%;
+                        background: #fff;
+                        padding: 34px;
+                        border-radius: 6px;
+                        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+                        margin: 5% 37%;
+                }
+                .wrapper h2{
+                        position: relative;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #333;
+                        text-align: center;
+                }
+                .wrapper form{
+                        margin-top: 30px;
+                }
+                .wrapper form .input-box{
+                        height: 52px;
+                        margin: 18px 0;
+                }
+                form .input-box input{
+                        height: 100%;
+                        width: 100%;
+                        outline: none;
+                        padding: 0 15px;
+                        font-size: 17px;
+                        font-weight: 400;
+                        color: #333;
+                        border: 1.5px solid #C7BEBE;
+                        border-bottom-width: 2.5px;
+                        border-radius: 6px;
+                        transition: all 0.3s ease;
+                }
+                .input-box input:focus,.input-box input:valid{
+                        border-color: #4070f4;
+                }
+                form .policy{
+                        display: flex;
+                        align-items: center;
+                }
+                form h3{
+                        color: #707070;
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-left: 10px;
+                }
+                .input-box.button input{
+                        color: #fff;
+                        letter-spacing: 1px;
+                        border: none;
+                        background: #4070f4;
+                        cursor: pointer;
+                }
+                .input-box.button input:hover{
+                        background: #0e4bf1;
+                }
+                form .text h3{
+                        color: #333;
+                        width: 100%;
+                        text-align: center;
+                }
+                form .text h3 a{
+                        color: #4070f4;
+                        text-decoration: none;
+                }
+                form .text h3 a:hover{
+                        text-decoration: underline;
+                }
+                .topnav {
+                        ul {
+                                background-color: #333;
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                                overflow-x: auto;
+                                overflow-y: hidden;
+                                border-radius: 10px;
+                                position: sticky;
+                                width: 100%;
+                                display: flex;
+                                height: 40px;
+                        }
+                        li {
+                                float: left;
+                        }
+                        li a {
+                                text-decoration: none;
+                                text-align: center;
+                                color: white;
+                                padding: 14px 16px;
+                                display: block;
+                        }
+                        li a:hover:not(.active) {
+                                background-color: #111;
+                        }
+                        .active {
+                                background-color: #04AA6D;
+                        }
+                        .right {
+                                float: right;
+                        }
+                }
+                @media (min-width: 576px) {
+                        .topnav ul li,
+                        .topnav .right {
+                                max-width: 540px;
+                                float: none;
+                        }
+                        li a {
+                                padding: 4px 6px;
+                        }
+                }
+                @media (min-width: 768px) {
+                        .topnav ul li,
+                        .topnav .right {
+                                max-width: 720px;
+                                float: none;
+                        }
+                        li a {
+                                padding: 4px 6px;
+                        }
+                        }
+                @media (min-width: 992px) {
+                        .topnav ul li,
+                        .topnav .right {
+                                max-width: 960px;
+                                float: none;
+                        }
+
+                        li a {
+                                padding: 4px 6px;
+                        }
+                }
+                @media (min-width: 1200px) {
+                        .topnav ul li,
+                        .topnav .right {
+                                max-width: 1140px;
+                                float: none;
+                        }
+                        li a {
+                                padding: 4px 6px;
+                        }
+                }
+        </style>
+</head>
+
+<body>
+        <header>
+                <div class="topnav">
+                <ul>
+                        <li><a href="HomePage.html"><i class="fa fa-home"></i>Trang chủ</a></li>
+                        <li><a href="#Thegioi"><i class="fa fa-comment"></i>Thế Giới</a></li>
+                        <li><a href="SearchPage.html">Tìm truyện</a></li>
+                        <li><a href="#Daysach">Đẩy sách</a></li>
+                        <li><a href="#Dichtrangweb">Dịch trang web</a></li>
+                        <li><a href="#Dich">Dịch</a></li>
+                        <li class="right"><a href="SignUpPage.html">Sign Up</a></li>
+                        <li class="right"><a href="LoginPage.html">Log In</a></li>
+                </ul>
+        </div>
+        </header>
+        <div class="wrapper">
+                <h2>Registration</h2>
+                <form action="#">
+                        <div class="input-box">
+                                <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                                <input type="text" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                                <input type="password" placeholder="Create password" required>
+                        </div>
+                        <div class="input-box">
+                                <input type="password" placeholder="Confirm password" required>
+                        </div>
+                        <div class="policy">
+                                <input type="checkbox">
+                                <h3>I accept all terms & condition</h3>
+                        </div>
+                        <div class="input-box button">
+                                <input type="Submit" value="Register Now">
+                        </div>
+                        <div class="text">
+                                <h3>Already have an account? <a href="LoginPage.html">Login now</a></h3>
+                        </div>
+                </form>
+        </div>
+</body>
+
+</html>

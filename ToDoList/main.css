@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+body{
+        height: 100vh;
+        background: linear-gradient(
+                135deg,
+                #8052ec,
+                #d161ff
+        );
+}
+
+.container{
+        /*border: 2px solid white;*/
+        width: 40%;
+        min-width: 450px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 35%;
+        left: 60%;
+}
+
+.container .nhap{
+        background-color: aliceblue;
+        border-radius: 7px;
+        height: 80px;
+        width: 350px;
+}
+
+.container .nhap input{
+        background-color: aliceblue;
+        border: #8052ec 2px solid;
+        border-radius: 4px;
+        height: 30px;
+        margin: 24px 24px 0px 21px;
+        width: 220px;
+        padding: 6px;
+        outline: none;
+}
+
+.container .nhap button{
+        background-color: #8052ec;
+        height: 30px;
+        border-radius: 6px;
+        width: 60px;
+        color: aliceblue;
+        border: 2px solid;
+        cursor: pointer;
+}
+
+.container .hien{
+        margin-top: 70px;
+        height: auto;
+        width: 350px;
+        background-color: aliceblue;
+        border-radius: 7px;
+        padding: 2px;
+}
+
+.container .hien .phantu{
+        margin: 25px 23px;
+        border-bottom: 2px solid wheat;
+        text-transform: capitalize;
+}
+
+.container .hien .phantu div{
+        margin-bottom: 8px;
+        font-size: 16px;
+}
+.container .hien .phantu button{
+        float: right;
+        height: 25px;
+        width: 25px;
+        color: white;
+        background-color: #8052ec;
+        border: 0px;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+.container .hien .phantu div{
+        cursor: pointer;
+}
+
+.container .hien .non{
+        text-transform: capitalize;
+        padding: 11px;
+}

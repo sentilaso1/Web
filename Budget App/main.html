@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="container">
+                <div class="data-container">
+                        <div class="phantu">
+                                <label for="">Budget</label>
+                                <input type="text" id="total-amount" placeholder="enter total amount">
+                                <div class="hide" id="budget-error">value can not empty or negative</div>
+                                <button id="total-amount-button">set budget</button>
+                        </div>
+                        <div class="phantu ">
+                                <label for="">Expense</label>
+                                <input type="text" id="product-title" placeholder="enter title of product">
+                                <input type="text" id="user-amount" placeholder="enter cost of product">
+                                <div class="hide" id="product-title-error">value can not empty</div>
+                                <button id="check-amount">check amount</button>
+                        </div>
+                </div>
+                <div class="output-container flex-space">
+                        <div>
+                                <p>Total Budget</p>
+                                <span id="amount">0</span>
+                        </div>
+                        <div>
+                                <p>Expenses</p>
+                                <span id="expenditure-value">0</span>
+                        </div>
+                        <div>
+                                <p>Balance</p>
+                                <span id="balance-amount">0</span>
+                        </div>
+                </div>
+                <div class="list">
+                        <h3>Expense List</h3>
+                        <div class="list-container" id="list"></div>
+                </div>
+        </div>
+        <script src="man.js"></script>
+</body>
+</html>

@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Trang Chủ</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Duong">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Hinhanh/html5.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <div class="topnav">
+                <ul>
+                        <li><a href="HomePage.html"><i class="fa fa-home"></i>Trang chủ</a></li>
+                        <li><a href="#Thegioi"><i class="fa fa-comment"></i>Thế Giới</a></li>
+                        <li><a href="SearchPage.html">Tìm truyện</a></li>
+                        <li><a href="#Daysach">Đẩy sách</a></li>
+                        <li><a href="#Dichtrangweb">Dịch trang web</a></li>
+                        <li><a href="#Dich">Dịch</a></li>
+                        <li class="right"><a href="SignUpPage.html">Sign Up</a></li>
+                        <li class="right"><a href="LoginPage.html">Log In</a></li>
+                </ul>
+        </div>
+        <form action="">
+                <input type="search" name="search" id="searchbook" class="search-box"
+                style="width: 30%;height: 50px;margin: 40px;margin-left: 35%;float: left;" 
+                placeholder="Link truyện/Tìm kiếm">
+        </form>
+        <div class="container">
+                <div class="row" style="background: #f4ffe3;">
+                        <div class="col-md-4">
+                                <div style="font-size: 12px;width: 100%;margin-bottom: 8px;">
+                                        <div style="font-size: 22px;margin-top: 20px;">Truyện vừa đọc</div>
+                                        <input class="tusachsearcher" type="text" placeholder="Truyện lưu ở đây dễ bị mất hãy dùng đánh dấu để theo dõi">
+                                </div>
+                                <div id="tusach" style="max-height: 160px;height: auto;overflow-y: auto;border: 1px solid rgb(232, 232, 232);visibility: visible;background-color: white;">
+                                        <div class="roundblock">
+                                                <a href="#truyen" class="title">
+                                                        Ngự thú: Nguyên lai các nàng mới là nhân vật chính?
+                                                        <br>
+                                                        Thứ 40 chương Ở kiếp trước cừu địch
+                                                </a>
+                                                <div class="btngroup">
+                                                        <button type="button" class="btn">...</button>
+                                                        <button type="button" class="btn">X</button>
+                                                </div>
+                                        </div>
+                                         <div class="roundblock">
+                                                <a href="#truyen" class="title">
+                                                        Type-Moon, Nghe Nói Sau Khi Chết, Là Có Thể Lên Throne Of Heroes?
+                                                        <br>
+                                                        Chương 44: Ngươi bắt được nó, Anh Linh
+                                                </a>
+                                                <div class="btngroup">
+                                                        <button type="button" class="btn">...</button>
+                                                        <button type="button" class="btn">X</button>
+                                                </div>
+                                        </div>
+                                        <div class="roundblock">
+                                                <a href="#truyen" class="title">
+                                                        Dẫn bóng a! Huấn luyện viên
+                                                        <br>
+                                                        318 chưởng khống toàn trường! Messi, ngươi đến cùng muốn làm gì?【 Vạn chữ đại chương, quỳ cầu đặt mua 】
+                                                </a>
+                                                <div class="btngroup">
+                                                        <button type="button" class="btn">...</button>
+                                                        <button type="button" class="btn">X</button>
+                                                </div>
+                                        </div>
+                                        <div class="roundblock">
+                                                <a href="#truyen" class="title">
+                                                        Ngự thú: Nguyên lai các nàng mới là nhân vật chính?
+                                                        <br>
+                                                        Thứ 40 chương Ở kiếp trước cừu địch
+                                                </a>
+                                                <div class="btngroup">
+                                                        <button type="button" class="btn">...</button>
+                                                        <button type="button" class="btn">X</button>
+                                                </div>
+                                        </div>
+                                        <div class="roundblock">
+                                                <a href="#truyen" class="title">
+                                                        Type-Moon, Nghe Nói Sau Khi Chết, Là Có Thể Lên Throne Of Heroes?
+                                                        <br>
+                                                        Chương 44: Ngươi bắt được nó, Anh Linh
+                                                </a>
+                                                <div class="btngroup">
+                                                        <button type="button" class="btn">...</button>
+                                                        <button type="button" class="btn">X</button>
+                                                </div>
+                                        </div>
+                                        <div class="roundblock">
+                                                <a href="#truyen" class="title">
+                                                        Dẫn bóng a! Huấn luyện viên
+                                                        <br>
+                                                        318 chưởng khống toàn trường! Messi, ngươi đến cùng muốn làm gì?【 Vạn chữ đại chương, quỳ cầu đặt mua 】
+                                                </a>
+                                                <div class="btngroup">
+                                                        <button type="button" class="btn">...</button>
+                                                        <button type="button" class="btn">X</button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-8" style="display: flex;flex-direction: column;max-height: 240px;">
+                                <div style="font-size: 20px;margin: 20px 0px 14px 0px;">
+                                        Dịch Nhanh>
+                                        <button type="button" class="btn" style="float: right;border: 1px solid #e8e8e8;line-height: 1;height: 30px;width: 60px;">Dịch</button>
+                                </div>
+                                <div class="row" style="flex-basis: 100%;padding: 0px 15px;">
+                                        <textarea name="tottrans" id="tottrans" style="border: 1px solid #e8e8e8;background-color: #f8f8f8;flex-basis: 50%;"></textarea>
+                                        <textarea name="translated" id="translated" style="border: 1px solid #e8e8e8;background-color: #f8f8f8;flex-basis: 50%;"></textarea>
+                                </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <div style="color: black;font-size: 14px;padding: 0px 15px;width: 100%;background: #d8effe;">
+                                <div style="font-size: 20px;margin: 20px 0px;">
+                                        Được nhiều Like &gt;
+                                        <a href="#xemthem" style="display: block;color: gray;font-size: 15px;float: right;margin-top: 3px;">
+                                        xem thêm ...
+                                        </a>
+                                </div>
+                                <div class="row book-grid">
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'href='/truyen/ciweimao/1/100395436/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'src='http://c1.kuangxiangit.com/uploads/allimg/c240129/29-01-24091031-36177.jpg' onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        P xã điên lão dũng giả sẽ không mơ tới bại trận
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1387754/'>
+                                                <div class='bookthumb'><img loading='lazy' referrerpolicy='no-referrer'src='http://img.faloo.com/Novel/498x705/1/1091/001091436.jpg' onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'> 
+                                                        Nhường ngươi viết võ hiệp! Ngươi viết Hải tặc : Vương Luffy?
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/qidian/1/1038797226/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'src='https://bookcover.yuewen.com/qdbimg/349573/1038797226/300' onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'> 
+                                                        Fairy tail: Ta mới không phải kinh khủng nhất ma đạo sĩ 
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/fanqie/1/7320653712605596734/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer' src='http://p6-novel.byteimg.com/origin/novel-pic/p2o6def6904e970eb0f34ea5789592fdb2a' onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'> 
+                                                        Ta sáng tạo ra quái vật danh sách!
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1388442/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'src='http://img.faloo.com/Novel/498x705/1/1092/001092220.jpg'onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b tyle='line-height:1.5;display:block;margin:8px 0'>
+                                                        Nhân vật phản diện lão tổ: Bắt đầu nạp thiếp tâm cơ nữ
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'href='/truyen/faloo/1/1389299/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'src='http://img.faloo.com/Novel/498x705/1/1093/001093202.jpg'onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Tổng mạn: Bắt đầu Koro-Sensei mô bản, truyền đạo thụ nghiệp 
+                                                </b>
+                                        </a><a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/ciweimao/1/100395483/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer' src='http://c1.kuangxiangit.com/uploads/allimg/c240129/29-01-24163253-29980.jpg'onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Xuyên qua thành túc na, nhưng túc chủ Yukinoshita?
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1387737/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'src='http://img.faloo.com/Novel/498x705/1/1091/001091421.jpg'onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'> 
+                                                        Tổng mạn: Đánh dấu Trái Tim Vũ Trụ, gia nhập vào Chat group 
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1388900/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer' src='http://img.faloo.com/Novel/498x705/1/1092/001092657.jpg'onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'> 
+                                                        Tinh linh: Ta chỉ là muốn đả kích tội ác mà thôi 
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/ciweimao/1/100395579/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'src='http://c1.kuangxiangit.com/uploads/allimg/c240130/30-01-24163631-4601.jpg'onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'> 
+                                                        Hokage, từ mộc diệp bắt đầu thôi miên toàn bộ giới Ninja 
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1388160/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer' src='http://img.faloo.com/Novel/498x705/1/1091/001091878.jpg'onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'> 
+                                                        Hogwarts: Van cầu ngươi làm người a!
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'href='/truyen/faloo/1/1389071/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'src='http://img.faloo.com/Novel/498x705/1/1092/001092903.jpg'onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'> 
+                                                        Ngộ tính nghịch thiên: Tối cường phá hư thần, gia nhập vào group chat 
+                                                </b>
+                                        </a>
+                                </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <div style="color: black;font-size: 14px;padding: 0px 15px;width: 100%;background: rgb(252, 233, 237);">
+                                <div style="font-size: 20px;margin: 20px 0px;">
+                                        Truyện Ngẫu Nhiên
+                                        <button style="float: right;">
+                                                <img src="Hinhanh/8391685.png" style="height: 18px;width: 18px;">
+                                        </button>
+                                </div>
+                                <div class="row book-grid">
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'
+                                                href='/truyen/ciweimao/1/100395436/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://c1.kuangxiangit.com/uploads/allimg/c240129/29-01-24091031-36177.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        P xã điên lão dũng giả sẽ không mơ tới bại trận
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'
+                                                href='/truyen/faloo/1/1387754/'>
+                                                <div class='bookthumb'><img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1091/001091436.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Nhường ngươi viết võ hiệp! Ngươi viết Hải tặc : Vương Luffy?
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'
+                                                href='/truyen/qidian/1/1038797226/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='https://bookcover.yuewen.com/qdbimg/349573/1038797226/300'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Fairy tail: Ta mới không phải kinh khủng nhất ma đạo sĩ
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'
+                                                href='/truyen/fanqie/1/7320653712605596734/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://p6-novel.byteimg.com/origin/novel-pic/p2o6def6904e970eb0f34ea5789592fdb2a'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Ta sáng tạo ra quái vật danh sách!
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'
+                                                href='/truyen/faloo/1/1388442/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1092/001092220.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b tyle='line-height:1.5;display:block;margin:8px 0'>
+                                                        Nhân vật phản diện lão tổ: Bắt đầu nạp thiếp tâm cơ nữ
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'
+                                                href='/truyen/faloo/1/1389299/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1093/001093202.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Tổng mạn: Bắt đầu Koro-Sensei mô bản, truyền đạo thụ nghiệp
+                                                </b>
+                                        </a><a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'
+                                                href='/truyen/ciweimao/1/100395483/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://c1.kuangxiangit.com/uploads/allimg/c240129/29-01-24163253-29980.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Xuyên qua thành túc na, nhưng túc chủ Yukinoshita?
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'
+                                                href='/truyen/faloo/1/1387737/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1091/001091421.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Tổng mạn: Đánh dấu Trái Tim Vũ Trụ, gia nhập vào Chat group
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'
+                                                href='/truyen/faloo/1/1388900/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1092/001092657.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Tinh linh: Ta chỉ là muốn đả kích tội ác mà thôi
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'
+                                                href='/truyen/ciweimao/1/100395579/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://c1.kuangxiangit.com/uploads/allimg/c240130/30-01-24163631-4601.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Hokage, từ mộc diệp bắt đầu thôi miên toàn bộ giới Ninja
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'
+                                                href='/truyen/faloo/1/1388160/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1091/001091878.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Hogwarts: Van cầu ngươi làm người a!
+                                                </b>
+                                        </a>
+                                        <a  class='col-lg-2 col-md-3 col-sm-3 col-4 cap'
+                                                href='/truyen/faloo/1/1389071/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1092/001092903.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Ngộ tính nghịch thiên: Tối cường phá hư thần, gia nhập vào group chat
+                                                </b>
+                                        </a>
+                                </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col" style="color: black;font-size: 14px;padding: 15px;background: #f4ffe3;">
+                                <div style="font-size: 20px;margin-bottom: 20px;">
+                                        Mới cập nhật &gt;
+                                        <a href="#xemthem" style="display: block;color: gray;font-size: 12px;float: right;margin-top: 10px;">
+                                                xem thêm...
+                                        </a>
+                                </div>
+                                <div class="book-list-item">
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60" onerror='this.src="/nothumb.jpg"'>
+                                                <a  class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;"> 
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                                <img referrerpolicy="no-referrer" loading="lazy"
+                                                        src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/2343d392cfc7810766d13ca715742907_600x800.jpg?f=webp&amp;q=60"
+                                                        onerror='this.src="/nothumb.jpg"'>
+                                                <a class="cap" href="/truyen/qimao/1/1781442/">
+                                                        <b> Cao võ: Ta có một cái giới tu luyện </b>
+                                                </a>
+                                                <br>
+                                                <span class="cap" style="color:gray;font-size:10px;">
+                                                        Dương quang quả lạp chanh
+                                                </span>
+                                                <i style="float:right">0 phút trước</i>
+                                                <div class="clear"></div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col" style="color: black;font-size: 14px;padding: 15px;background: beige;">
+                                <div style="font-size: 20px;margin-bottom: 20px;">
+                                        Chuyện thiên hạ &gt;
+                                </div>
+                                <div style="font-size: 13px;margin-top: 40px;">
+                                        Kênh chính Kênh 18+
+                                </div>
+                                <iframe src="https://www6.cbox.ws/box/?boxid=828154&boxtag=DAdiQY" frameborder="0" title="cbox"></iframe>
+                                <div style="font-size: 20px;margin-top: 13px;">Quảng cáo</div>
+                                <iframe src="https://www.youtube.com/embed/uJMCNJP2ipI?si=OZLqIP_Im8i3TDlP?autoplay=1"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                        </div>
+                </div>
+                <div class="row">
+                        <div style="color: black;font-size: 14px;padding: 0px 15px;width: 100%;background: #eafdff">
+                                <div style="font-size: 20px;margin: 20px 0px;">
+                                        Truyện Xem Nhiều Trong Tuần &gt;
+                                        <a href="#xemthem"
+                                                style="display: block;color: gray;font-size: 15px;float: right;margin-top: 3px;">
+                                                xem thêm ...
+                                        </a>
+                                </div>
+                                <div class="row book-grid">
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/ciweimao/1/100395436/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://c1.kuangxiangit.com/uploads/allimg/c240129/29-01-24091031-36177.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        P xã điên lão dũng giả sẽ không mơ tới bại trận
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1387754/'>
+                                                <div class='bookthumb'><img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1091/001091436.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Nhường ngươi viết võ hiệp! Ngươi viết Hải tặc : Vương Luffy?
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/qidian/1/1038797226/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='https://bookcover.yuewen.com/qdbimg/349573/1038797226/300'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Fairy tail: Ta mới không phải kinh khủng nhất ma đạo sĩ
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/fanqie/1/7320653712605596734/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://p6-novel.byteimg.com/origin/novel-pic/p2o6def6904e970eb0f34ea5789592fdb2a'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Ta sáng tạo ra quái vật danh sách!
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1388442/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1092/001092220.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b tyle='line-height:1.5;display:block;margin:8px 0'>
+                                                        Nhân vật phản diện lão tổ: Bắt đầu nạp thiếp tâm cơ nữ
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1389299/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1093/001093202.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Tổng mạn: Bắt đầu Koro-Sensei mô bản, truyền đạo thụ nghiệp
+                                                </b>
+                                        </a><a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/ciweimao/1/100395483/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://c1.kuangxiangit.com/uploads/allimg/c240129/29-01-24163253-29980.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Xuyên qua thành túc na, nhưng túc chủ Yukinoshita?
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1387737/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1091/001091421.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Tổng mạn: Đánh dấu Trái Tim Vũ Trụ, gia nhập vào Chat group
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1388900/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1092/001092657.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Tinh linh: Ta chỉ là muốn đả kích tội ác mà thôi
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/ciweimao/1/100395579/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://c1.kuangxiangit.com/uploads/allimg/c240130/30-01-24163631-4601.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Hokage, từ mộc diệp bắt đầu thôi miên toàn bộ giới Ninja
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1388160/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1091/001091878.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Hogwarts: Van cầu ngươi làm người a!
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1389071/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1092/001092903.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Ngộ tính nghịch thiên: Tối cường phá hư thần, gia nhập vào group chat
+                                                </b>
+                                        </a>
+                                </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <div style="color: black;font-size: 14px;padding: 0px 15px;width: 100%;background: white">
+                                <div style="font-size: 20px;margin: 20px 0px;">
+                                        Truyện Hot Tuần &gt;
+                                        <a href="#xemthem"
+                                                style="display: block;color: gray;font-size: 15px;float: right;margin-top: 3px;">
+                                                xem thêm ...
+                                        </a>
+                                </div>
+                                <div class="row book-grid">
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/ciweimao/1/100395436/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://c1.kuangxiangit.com/uploads/allimg/c240129/29-01-24091031-36177.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        P xã điên lão dũng giả sẽ không mơ tới bại trận
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1387754/'>
+                                                <div class='bookthumb'><img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1091/001091436.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Nhường ngươi viết võ hiệp! Ngươi viết Hải tặc : Vương Luffy?
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/qidian/1/1038797226/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='https://bookcover.yuewen.com/qdbimg/349573/1038797226/300'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Fairy tail: Ta mới không phải kinh khủng nhất ma đạo sĩ
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/fanqie/1/7320653712605596734/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://p6-novel.byteimg.com/origin/novel-pic/p2o6def6904e970eb0f34ea5789592fdb2a'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Ta sáng tạo ra quái vật danh sách!
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1388442/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1092/001092220.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b tyle='line-height:1.5;display:block;margin:8px 0'>
+                                                        Nhân vật phản diện lão tổ: Bắt đầu nạp thiếp tâm cơ nữ
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1389299/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1093/001093202.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Tổng mạn: Bắt đầu Koro-Sensei mô bản, truyền đạo thụ nghiệp
+                                                </b>
+                                        </a><a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/ciweimao/1/100395483/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://c1.kuangxiangit.com/uploads/allimg/c240129/29-01-24163253-29980.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Xuyên qua thành túc na, nhưng túc chủ Yukinoshita?
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1387737/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1091/001091421.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Tổng mạn: Đánh dấu Trái Tim Vũ Trụ, gia nhập vào Chat group
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1388900/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1092/001092657.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Tinh linh: Ta chỉ là muốn đả kích tội ác mà thôi
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/ciweimao/1/100395579/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://c1.kuangxiangit.com/uploads/allimg/c240130/30-01-24163631-4601.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Hokage, từ mộc diệp bắt đầu thôi miên toàn bộ giới Ninja
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1388160/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1091/001091878.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Hogwarts: Van cầu ngươi làm người a!
+                                                </b>
+                                        </a>
+                                        <a class='col-lg-2 col-md-3 col-sm-3 col-4 cap' href='/truyen/faloo/1/1389071/'>
+                                                <div class='bookthumb'>
+                                                        <img loading='lazy' referrerpolicy='no-referrer'
+                                                                src='http://img.faloo.com/Novel/498x705/1/1092/001092903.jpg'
+                                                                onerror='this.src="/nothumb.jpg"'>
+                                                </div>
+                                                <b style='line-height:1.5;display:block;margin:8px 0'>
+                                                        Ngộ tính nghịch thiên: Tối cường phá hư thần, gia nhập vào group chat
+                                                </b>
+                                        </a>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div style="background-color: black;color: white;text-align: center;padding: 40px;">
+                powered by Duong 
+        </div>
+</body>
+</html>

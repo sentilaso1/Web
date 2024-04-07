@@ -1,0 +1,43 @@
+body{
+        text-align: center;
+        margin: 10px;
+        font-size: larger;
+        color: rgba(0, 102, 255, 0.83);
+}
+
+.container{
+        margin: 50px 26.5%;
+}
+
+.labai{
+        height: 160px;
+        width: 120px;
+        background-color: wheat;
+        float: left;
+        margin: 30px 10px;
+        cursor: pointer;
+}
+
+.clear{
+        clear: both;
+        margin: 0;
+        content: "";
+}
+
+button{
+        margin-top: 10px;
+        cursor: pointer;
+}
+
+label{
+        font-size: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+        .clear{
+                clear: none;
+        }
+        .container{
+                margin: 0;
+        }
+}

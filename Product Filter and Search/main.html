@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="man.js"></script>
+</head>
+<body onload="hiencacphantu(0)">
+        <div class="container">
+                <div class="search-container">
+                        <div class="row1">
+                                <input type="text" placeholder="Search product name here.." id="tukhoa">
+                                <button type="button" onclick="timtukhoa()">Search</button>
+                        </div>
+                        <div class="row2" id="row2">
+                                <div id="row2-1" onclick="thaydoi('All', 'row2-1')" class="active">All</div>
+                                <div id="row2-2" onclick="thaydoi('Topwear', 'row2-2')">Topwear</div>
+                                <div id="row2-3" onclick="thaydoi('Bottomwear', 'row2-3')">Bottomwear</div>
+                                <div id="row2-4" onclick="thaydoi('Jacket', 'row2-4')">Jacket</div>
+                                <div id="row2-5" onclick="thaydoi('Watch', 'row2-5')">Watch</div>
+                        </div>
+                </div>
+                <div class="clear"></div>
+                <div class="products">
+                        <div id="1"></div>
+                </div>
+        </div>
+</body>
+</html>

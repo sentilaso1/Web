@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+        background: #456990;
+        color: #fff;
+        overflow-x: hidden;
+        padding-bottom: 50px;
+}
+
+/*/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.intro{
+        background-color: #F45B69;
+        height: 150px;
+        width: 100%;
+}
+
+.container{
+        text-align: center;
+        padding: 53px 0;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul{
+        list-style-type: none;
+        background: #fff;
+        width: 7px;
+        margin: 80px 49%;
+}
+
+.timeline ul li{
+        padding: 0px 45px;
+        position: relative;
+}
+
+.timeline ul li div{
+        position: relative;
+        bottom: 0;
+        padding: 15px;
+        width: 350px;
+        height: 180px;
+        background-color: #F45B69;
+}
+
+time {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+}
+
+.timeline ul li::after {
+        content: "";
+        position: absolute;
+        left: 4%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: inherit;
+        z-index: 1;
+        background-color: #F45B69;
+}
+
+.timeline ul li div::before {
+        content: "";
+        position: absolute;
+        bottom: 7px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+        left: 0px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #f45b69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+        left: -436px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+        right: -15px;
+        border-width: 8px 0 8px 16px;
+        border-color: transparent transparent transparent #f45b69;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+        transition: 0.5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+        background: #f45b69;
+}
+
+.timeline ul li div {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+        transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+        transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+        transform: none;
+        visibility: visible;
+        opacity: 1;
+}

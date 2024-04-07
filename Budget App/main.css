@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+}
+
+body{
+        background-color: #f7f9fd;
+}
+
+.container{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+}
+
+.container .data-container{
+        display: flex;
+}
+
+.container .data-container .phantu{
+        float: left;
+        margin-top: 12px;
+        background-color: white;
+        width: 280px;
+        height: 200px;
+        box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25);
+        padding: 20px 15px;
+        border-radius: 6px;
+        font-weight: 600;
+        margin-left: 40px;
+}
+
+.phantu input{
+        margin-top: 12px;
+        height: 30px;
+        width: 250px;
+        border-radius: 4px;
+        border: 0.5px solid rgb(215, 223, 230);
+        padding: 5px;
+        text-transform: capitalize;
+        outline: none;
+}
+
+.phantu div{
+        font-size: 12px;
+        text-transform: capitalize;
+        color: red;
+}
+
+.hide{
+        display: none;
+}
+
+.phantu button{
+        margin-top: 10px;
+        padding: 10px 18px;
+        border-radius: 4px;
+        border: none;
+        background-color: #5e81eb;
+        color: aliceblue;
+        text-transform: capitalize;
+        cursor: pointer;
+}
+
+.flex-space {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.output-container {
+        margin-left: 39px!important;
+        background-color: #587ef4;
+        color: #ffffff;
+        border-radius: 0.3em;
+        box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+        margin: 2em 0;
+        padding: 1.2em;
+}
+
+.output-container p {
+        font-weight: 500;
+        margin-bottom: 0.6em;
+}
+
+.output-container span {
+        display: block;
+        text-align: center;
+        font-weight: 400;
+        color: #e5e5e5;
+}
+
+.list {
+        margin-left: 39px !important;
+        background-color: #ffffff;
+        padding: 1.8em 1.2em;
+        box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+        border-radius: 0.6em;
+}
+
+.sublist-content {
+        width: 100%;
+        border-left: 0.3em solid #587ef4;
+        margin-bottom: 0.6em;
+        padding: 0.5em 1em;
+        display: grid;
+        grid-template-columns: 3fr 2fr 1fr 1fr;
+}
+
+.product {
+        font-weight: 500;
+        color: #363d55;
+}
+
+.amount {
+        color: #414a67;
+        margin-left: 20%;
+}
+
+.icons-container {
+        width: 5em;
+        margin: 1.2em;
+        align-items: center;
+}
+
+.product-title {
+        margin-bottom: 1em;
+}
+
+.edit {
+        margin-left: auto;
+}
+
+.edit,.delete {
+        background: transparent;
+        cursor: pointer;
+        margin-right: 1.5em;
+        border: none;
+        color: #587ef4;
+}
+
+@media screen and (max-width: 600px) {
+        .container {
+                font-size: 14px;
+        }
+
+        .data-container {
+                grid-template-columns: 1fr;
+                gap: 1em;
+        }
+}

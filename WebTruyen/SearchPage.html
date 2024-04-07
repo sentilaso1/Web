@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Tìm kiếm</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Duong">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Hinhanh/html5.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="main.css">
+</head>
+<body >
+        <div class="topnav">
+                <ul>
+                        <li><a href="HomePage.html"><i class="fa fa-home"></i>Trang chủ</a></li>
+                        <li><a href="#Thegioi"><i class="fa fa-comment"></i>Thế Giới</a></li>
+                        <li><a href="SearchPage.html">Tìm truyện</a></li>
+                        <li><a href="#Daysach">Đẩy sách</a></li>
+                        <li><a href="#Dichtrangweb">Dịch trang web</a></li>
+                        <li><a href="#Dich">Dịch</a></li>
+                        <li class="right"><a href="SignUpPage.html">Sign Up</a></li>
+                        <li class="right"><a href="LoginPage.html">Log In</a></li>
+                </ul>
+        </div>
+        <form action="">
+                <input type="search" name="search" id="searchbook" class="search-box"
+                        placeholder="Link truyện/Tìm kiếm">
+        </form>
+        <div class="inner">
+                <div class="search-div">
+                        <br>
+                        <div>
+                                <form action="">
+                                        <div class="input-group mb-3 mt-3">
+                                                <div style="margin-right: -1px;width: 140px;padding-top: 10px;">Tìm từ khóa:</div>
+                                                <input type="text" placeholder="tìm trong tên,tên hán việt,tác giả" class="input-group-text">
+                                                <div style="margin-left: -1px;width: 40px;padding-top: 4px;">
+                                                        <button type="button">
+                                                                <i class="fa fa-magic" style="height: 100%;width: 100%;background-color: inherit;"></i>
+                                                        </button>
+                                                </div>
+                                        </div>
+                                        <div class="input-group mb-3 mt-3">
+                                                <div style="margin-right: -1px;width: 140px;padding-top: 10px;">Tìm tóm tắt:</div>
+                                                <input type="text" placeholder="tìm trong phần tóm tắt của truyện" class="input-group-text">
+                                        </div>
+                                        <div class="input-group">
+                                                <input type="text" placeholder="Chỉ tìm nguồn:" class="input-group-text">
+                                                <select name="" id="" style="width: 15%;" >
+                                                        <option value="">[Chọn nguồn nhanh]</option>
+                                                </select>
+                                        </div>
+                                        <span class="select-title">Số chương</span>
+                                        <span class="blk-arr">
+                                                <button type="button" class="btn btn-light"> >50</button>
+                                                <button type="button" class="btn btn-light"> >100</button>
+                                                <button type="button" class="btn btn-light"> >200</button>
+                                                <button type="button" class="btn btn-light"> >500</button>      
+                                                <button type="button" class="btn btn-light"> >1000</button>
+                                                <button type="button" class="btn btn-light"> >1500</button>
+                                                <button type="button" class="btn btn-light"> >2000</button>      
+                                                <button type="button" class="btn btn-light">Tất cả</button>
+                                        </span>
+                                        <span class="select-title">Sắp xếp</span>
+                                        <span class="blk-arr">
+                                                <button type="button" class="btn btn-light">Không xắp xếp</button>
+                                                <button type="button" class="btn btn-light">Mới nhập kho</button>
+                                                <button type="button" class="btn btn-light">Mới cập nhật</button>
+                                                <button type="button" class="btn btn-light">Lượt đọc tổng</button>
+                                                <button type="button" class="btn btn-light">Lượt đọc tuần</button>
+                                                <button type="button" class="btn btn-light">Lượt đọc ngày</button>
+                                                <button type="button" class="btn btn-light">Lượt thích</button>
+                                                <button type="button" class="btn btn-light">Lượt theo dõi</button>
+                                                <button type="button" class="btn btn-light">Lượt đánh dấu</button>
+                                                <button type="button" class="btn btn-light">Đề cử</button>
+                                        </span>
+                                        <span class="select-title">Thể loại</span>
+                                        <span class="blk-arr">
+                                                <button type="button" class="btn btn-light">Tất cả</button>
+                                                <button type="button" class="btn btn-light">Huyền Huyễn</button>
+                                                <button type="button" class="btn btn-light">Đô thị</button>
+                                                <button type="button" class="btn btn-light">Ngôn tình</button>
+                                                <button type="button" class="btn btn-light">Võng du</button>
+                                                <button type="button" class="btn btn-light">Khoa học viễn tưởng</button>
+                                                <button type="button" class="btn btn-light">Lịch sử</button>
+                                                <button type="button" class="btn btn-light">Đồng nhân</button>
+                                                <button type="button" class="btn btn-light">Dị năng</button>
+                                                <button type="button" class="btn btn-light">Lịnh dị</button>
+                                                <button type="button" class="btn btn-light">Light Novel</button>
+                                        </span>
+                                        <span class="select-title">Trạnh thái</span>
+                                        <span class="blk-arr">
+                                                <button type="button" class="btn btn-light">Tất cả</button>
+                                                <button type="button" class="btn btn-light">Hoàn thành</button>
+                                                <button type="button" class="btn btn-light">Còn tiếp</button>
+                                                <button type="button" class="btn btn-light">Tạm ngưng</button>
+                                                <button type="button" class="btn btn-light">Không tạm ngưng</button>
+                                        </span>
+                                        <span class="select-title">Nhãn dán</span>
+                                        <span class="blk-arr">
+                                                <button type="button" class="btn btn-light">Ẩn nguồn Faloo</button>
+                                                <button type="button" class="btn btn-light">Ẩn nguồn Ciweimao</button>
+                                                <button type="button" class="btn btn-light">Ẩn nguồn Fanqie</button>
+                                                <button type="button" class="btn btn-light">Ẩn nguồn Sfacg</button>
+                                                <button type="button" class="btn btn-light">Ẩn nguồn Jjwxc</button>
+                                                <button type="button" class="btn btn-light">Ẩn nguồn 18+</button>
+                                        </span>
+                                </form>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <button class="btn btn-outline">
+                                <i class="fa fa-list"></i>
+                                /
+                                <i class="fa fa-th"></i>
+                        </button>
+                        <button type="button" class="btn btn-info" style="float: right;">
+                                <i class="fa fa-search"></i> Tìm
+                        </button>
+                        <span style="padding: 8px;float: right;font-size: 17px;">Cuộn vô cực &nbsp;&nbsp;&nbsp;</span>
+                        <input type="checkbox" name="" id="" style="float: right;margin-top: 2px;height: 30px;width: 30px;">
+                        <span style="padding: 8px;float: right;font-size: 17px;">Ẩn 18+ &nbsp;&nbsp;&nbsp;</span>
+                        <input type="checkbox" name="" id="" style="float: right;margin-top: 2px;height: 30px;width: 30px;">
+                        
+                </div>
+                <div class="row">
+                        
+                </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="index.js"></script>
+</head>
+<body onload="animate_string('demo')">
+        <p id="thu"></p>
+        <button type="button" onclick="window.print()">print</button>
+        <pre id="demo">Hello World!</pre>
+        <form action="" id="temp">
+                <input type="text">
+        </form>
+        <button type="button" onclick="check('temp')">Check!</button>
+        <p id="result"></p>
+        <form action="">
+                1st number: <input type="text" id="num1">
+                <br>
+                <br>
+                2nd number: <input type="text" id="num2">
+                <br>
+                <button type="button" onclick="mul()">mul</button>
+                <button type="button" onclick="divide()">div</button>
+        </form>
+        <p id="kq"></p>
+        <button type="button" onclick="clearIn()">stop change backgroundColor</button>
+        <br>
+        <br>
+        <form action="">
+                Nhap: <input type="text" id="nhapdo">
+                <select name="luachondo" id="Degree">
+                        <option value="C Degree">C Degree</option>
+                        <option value="F Degree">F Degree</option>
+                </select>
+        </form>
+        <button type="button" onclick="hieno()">Chuyen Doi</button>
+        <button type="button" onclick="rev()">Tinh</button>
+        <p id="show"></p>
+        <div id="google_translate_element"></div>
+        <script>
+                function rev() {
+                        const element1 = document.getElementById("nhapdo");
+                        let a = element1.value;
+                        let result = capitalizeFirstLetter(a);
+                        document.getElementById("show").innerHTML = result;
+                }
+                function Check3box(string) {
+                        let a = "a";
+                        let b = "b";
+                        let arr = string.split("");
+                        for (let i = 0; i < arr.length; i++) {
+                                if (arr[i] === arr[i+4] && ((arr[i] === "a" && arr[i+4] === "b") || (arr[i] === "b" && arr[i] === "a")) ) {
+                                        return true;
+                                }
+                        }
+                        return false;
+                }
+                function capitalizeFirstLetter(string) {
+                        let arr = string.split(",");
+                        for (let i = 0; i < arr.length; i++) {
+                                let 
+                        }
+                        return arr[0];
+                }
+        </script>
+        <!--
+                <script type="text/javascript">
+                function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                }
+        </script>
+        <script type="text/javascript"
+                src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        -->
+        
+
+</body>
+</html>
+<!--82-->

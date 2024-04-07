@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        font-family: "Poppins" sans-serif;
+}
+
+body{
+        background-color: #F4F5FE;
+}
+
+.container{
+        margin: 22px;
+}
+
+.search-container .row1 input{
+        background-color: #F4F5FE;
+        height: 35px;
+        font-size: 12px;
+        width: 400px;
+        border-bottom: 1px solid black;
+        color: black;
+}
+
+.search-container .row1 button{
+        background-color: #645FFF;
+        margin-left: 10px;
+        height: 33px;
+        width: 65px;
+        color: #F4F5FE;
+        border-radius: 4px;
+        font-size: 12px;
+        cursor: pointer;
+}
+
+.search-container .row2 div{
+        margin-top: 16px;
+        margin-right: 4px;
+        border: 1px solid #4239c1;
+        float: left;
+        height: 30px;
+        width: auto;
+        padding: 6px 18px;
+        font-size: 13px;
+        border-radius: 14px;
+        color: #4239c1;
+        font-weight: 100;
+        cursor: pointer;
+}
+
+.search-container .row2 div.active{
+        color: white;
+        background-color: #645FFF;
+}
+
+.clear{
+        clear: both;
+        content: "";
+}
+
+.products{
+        margin-top: 40px;
+        margin-left: 20px;
+}
+
+.sp-container{
+        float: left;
+        margin-top: 19px;
+        margin-right: 190px;
+        background-color: white;
+        height: 330px;
+        width: 255px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sp-container .phantu{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: black;
+}
+
+.sp-container .phantu .mota{
+        margin-left: 12px;
+        margin-top: 12px;
+        font-weight: bold;
+}
+
+.sp-container .phantu img{
+        height: 240px;
+        width: 200px;
+        margin: 14px 28px;
+}

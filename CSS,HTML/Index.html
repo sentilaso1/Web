@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Snake Game</title>
+        <style>
+                canvas {
+                        border: 1px solid #000;
+                        display: block;
+                        margin: 0 auto;
+                }
+        </style>
+</head>
+
+<body>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <script>
+                // Game variables
+                var canvas = document.getElementById("gameCanvas");
+                var ctx = canvas.getContext("2d");
+                var blockSize = 20;
+                var widthInBlocks = canvas.width / blockSize;
+                var heightInBlocks = canvas.height / blockSize;
+                var score = 0;
+                var snake;
+                var apple;
+
+                // Block constructor
+                function Block(col, row) {
+                        this.col = col;
+                        this.row = row;
+                }
+
+                // Draw a square at the block's location
+                Block.prototype.drawSquare = function (color) {
+                        var x = this.col * blockSize;
+                        var y = this.row * blockSize;
+                        ctx.fillStyle = color;
+                        ctx.fillRect(x, y, blockSize, blockSize);
+                };
+
+                // Check if this block is in the same location as another block
+                Block.prototype.equal = function (otherBlock) {
+                        return this.col === otherBlock.col && this.row === otherBlock.row;
+                };
+
+                // Snake constructor
+                function Snake() {
+                        this.segments = [new Block(7, 5), new Block(6, 5), new Block(5, 5)];
+                        this.direction = "right";
+                        this.nextDirection = "right";
+                }
+
+                // Draw the snake
+                Snake.prototype.draw = function () {
+                        for (var i = 0; i < this.segments.length; i++) {
+                                this.segments[i].drawSquare("blue");
+                        }
+                };
+
+                // Move the snake
+                Snake.prototype.move = function () {
+                        var head = this.segments[0];
+                        var newHead;
+
+                        this.direction = this.nextDirection;
+
+                        if (this.direction === "right") {
+                                newHead = new Block(head.col + 1, head.row);
+                        } else if (this.direction === "down") {
+                                newHead = new Block(head.col, head.row + 1);
+                        } else if (this.direction === "left") {
+                                newHead = new Block(head.col - 1, head.row);
+                        } else if (this.direction === "up") {
+                                newHead = new Block(head.col, head.row - 1);
+                        }
+
+                        if (this.checkCollision(newHead)) {
+                                gameOver();
+                                return;
+                        }
+
+                        this.segments.unshift(newHead);
+
+                        if (newHead.equal(apple.position)) {
+                                score++;
+                                apple.move();
+                        } else {
+                                this.segments.pop();
+                        }
+                };
+
+                // Check if the snake has collided with itself or a wall
+                Snake.prototype.checkCollision = function (head) {
+                        var leftCollision = head.col === 0;
+                        var topCollision = head.row === 0;
+                        var rightCollision = head.col === widthInBlocks - 1;
+                        var bottomCollision = head.row === heightInBlocks - 1;
+
+                        var wallCollision =
+                                leftCollision || topCollision || rightCollision || bottomCollision;
+
+                        var selfCollision = false;
+
+                        for (var i = 0; i < this.segments.length; i++) {
+                                if (head.equal(this.segments[i])) {
+                                        selfCollision = true;
+                                }
+                        }
+
+                        return wallCollision || selfCollision;
+                };
+
+                // Set snake's next direction based on user input
+                Snake.prototype.setDirection = function (newDirection) {
+                        if (this.direction === "up" && newDirection === "down") {
+                                return;
+                        } else if (this.direction === "right" && newDirection === "left") {
+                                return;
+                        } else if (this.direction === "down" && newDirection === "up") {
+                                return;
+                        } else if (this.direction === "left" && newDirection === "right") {
+                                return;
+                        }
+
+                        this.nextDirection = newDirection;
+                };
+
+                // Apple constructor
+                function Apple() {
+                        this.position = new Block(10, 10);
+                }
+
+                // Draw the apple
+                Apple.prototype.draw = function () {
+                        this.position.drawSquare("red");
+                };
+
+                // Move the apple to a new random position
+                Apple.prototype.move = function () {
+                        var randomCol = Math.floor(Math.random() * (widthInBlocks - 2)) + 1;
+                        var randomRow = Math.floor(Math.random() * (heightInBlocks - 2)) + 1;
+                        this.position = new Block(randomCol, randomRow);
+                };
+
+                // Initialize the game
+                function init() {
+                        snake = new Snake();
+                        apple = new Apple();
+
+                        // Listen for keyboard events
+                        document.addEventListener("keydown", function (e) {
+                                var newDirection;
+                                switch (e.keyCode) {
+                                        case 37:
+                                                newDirection = "left";
+                                                break;
+                                        case 38:
+                                                newDirection = "up";
+                                                break;
+                                        case 39:
+                                                newDirection = "right";
+                                                break;
+                                        case 40:
+                                                newDirection = "down";
+                                                break;
+                                        default:
+                                                return;
+                                }
+                                snake.setDirection(newDirection);
+                        });
+
+                        gameLoop();
+                }
+
+                // The main game loop
+                function gameLoop() {
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        snake.move();
+                        snake.draw();
+                        apple.draw();
+                        drawScore();
+                        setTimeout(gameLoop, 100);
+                }
+
+                // Draw the score
+                function drawScore() {
+                        ctx.font = "20px Arial";
+                        ctx.fillStyle = "black";
+                        ctx.fillText("Score: " + score, 10, 30);
+                }
+
+                // Game over function
+                function gameOver() {
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        ctx.font = "40px Arial";
+                        ctx.fillStyle = "red";
+                        ctx.textAlign = "center";
+                        ctx.textBaseline = "middle";
+                        ctx.fillText("Game Over", canvas.width / 2, canvas.height / 2);
+                        ctx.fillText("Score: " + score, canvas.width / 2, canvas.height / 2 + 50);
+                }
+
+                // Start the game
+                init();
+        </script>
+</body>
+
+</html>
